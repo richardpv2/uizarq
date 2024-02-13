@@ -1,0 +1,202 @@
+.container {
+  margin-top: 60px;
+}
+.infoStaff {
+  color: #fff;
+  max-width: 900px;
+  padding: 110px 50px;
+  margin: 0 auto;
+}
+.infoStaff p {
+  font-weight: 200;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.infoStaff h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.infoStaff p:last-of-type {
+  margin-bottom: 50px;
+}
+.infoStaff span {
+  font-weight: 600;
+}
+.buttonStaffFirefox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 240px;
+  height: 40px;
+  cursor: pointer;
+  background: linear-gradient(to right, #48a6e7, #13d6df, #8572ef, #f70fff);
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.buttonStaffFirefox::after {
+  content: "Uizarq Interview";
+  width: calc(100% - 5px);
+  height: 35px;
+  background-color: #0f0d10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@property --color1 {
+  syntax: "<color>";
+  initial-value: #48a6e7;
+  inherits: false;
+}
+
+@property --color2 {
+  syntax: "<color>";
+  initial-value: #13d6df;
+  inherits: false;
+}
+
+@property --color3 {
+  syntax: "<color>";
+  initial-value: #8572ef;
+  inherits: false;
+}
+
+@property --color4 {
+  syntax: "<color>";
+  initial-value: #f70fff;
+  inherits: false;
+}
+.buttonStaffChrome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 240px;
+  height: 40px;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4)
+  );
+  transition: --color1 0.4s ease-in-out, --color2 0.4s ease-in-out,
+    --color3 0.4s ease-in-out, --color4 0.4s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.buttonStaffChrome::after {
+  content: "Uizarq Interview";
+  width: calc(100% - 5px);
+  height: 35px;
+  background-color: #0f0d10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonStaffChrome:hover {
+  --color1: #f70fff;
+  --color2: #8572ef;
+  --color3: #13d6df;
+  --color4: #48a6e7;
+}
+.staff {
+  display: flex;
+  padding: 0 5px 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  user-select: none;
+}
+.staffItem {
+  width: 100%;
+  padding-bottom: 30px;
+}
+@media (min-width: 625px) {
+  .staffItem {
+    width: 80%;
+  }
+}
+.staffImg {
+  display: inline-block;
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+  position: relative;
+}
+.staffImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 725px) {
+  .staffImg {
+    height: 80vw;
+  }
+}
+.staffSocialMedia,
+.staffName {
+  position: absolute;
+  bottom: 20px;
+}
+.staffName {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  left: 20px;
+}
+.staffName span {
+  display: block;
+  font-weight: 500;
+  background: linear-gradient(270deg, #f70fff, #8572ef, #13d6df, #48a6e7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.staffSocialMedia {
+  right: 20px;
+}
+.staffSocialMedia a:last-of-type {
+  margin-left: 10px;
+}
+.staffSocialMedia img {
+  width: 40px;
+}
+.staffText {
+  color: white;
+  font-weight: 200;
+  padding: 10px;
+}
+.staffText p:last-of-type {
+  margin-top: 19px;
+}
+@media (min-width: 960px) {
+  .staff {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .staffItem {
+    width: 25%;
+  }
+  .staffImg {
+    height: 30vw;
+  }
+  .staffSocialMedia img {
+    transition: filter 0.3s ease;
+    width: 30px;
+  }
+  .staffSocialMedia a:last-of-type {
+    margin-left: 5px;
+  }
+  .staffSocialMedia img:hover {
+    filter: brightness(0.5);
+  }
+}

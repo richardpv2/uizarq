@@ -1,0 +1,51 @@
+.lang_switch {
+  position: absolute;
+  left: 10px;
+  color: white;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+.lang_switch:hover {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+.lang_switch p {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lang_switch > div {
+  position: absolute;
+  top: 40px;
+  display: none;
+}
+.lang_switch button {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  font-weight: 600;
+  color: black;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.lang_switch button:hover {
+  background: black;
+  color: white;
+}
+.lang_switch:hover div {
+  display: block;
+}
+@media (min-width: 960px) {
+  .lang_switch {
+    left: initial;
+    right: 10px;
+    z-index: 1;
+  }
+}

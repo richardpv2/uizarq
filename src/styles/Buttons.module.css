@@ -1,0 +1,33 @@
+.bttnLink,
+.bttnButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  height: 45px;
+  border: 2px solid white;
+  color: white;
+  user-select: none;
+}
+.bttnLink {
+  text-decoration: none;
+}
+@media (min-width: 960px) {
+  .bttnLink,
+  .bttnButton {
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+  .bttnLink:hover,
+  .bttnButton:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.075);
+  }
+}

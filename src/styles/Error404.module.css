@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  background-color: white;
+}
+.container img {
+  position: absolute;
+  top: 80px;
+  width: 197px;
+}
+.text {
+  text-align: center;
+  font-size: 30px;
+  max-width: 550px;
+}
+.text h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
+.text p {
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+.text a {
+  text-decoration: none;
+  color: #469cff;
+}

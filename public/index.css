@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: #110D11;
+}
+noscript {
+  width: 100%;
+  height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}

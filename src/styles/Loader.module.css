@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  background-color: #110d11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.container video {
+  width: 250px;
+  position: absolute;
+  pointer-events: none;
+}
+.container img {
+  width: 252px;
+  position: relative;
+  top: 1px;
+  pointer-events: none;
+}
+.container p {
+  text-align: center;
+  padding: 0 30px;
+  position: absolute;
+  bottom: 100px;
+  color: white;
+  font-weight: 500;
+}
+.container a {
+  color: aquamarine;
+  text-decoration: none;
+}
+.changeScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #110d11; */
+  background-color: red;
+  z-index: 49;
+  transform: scale(95%, 95%);
+}

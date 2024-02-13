@@ -1,0 +1,132 @@
+.container {
+  background-color: black;
+  padding: 80px 5vw;
+}
+.rainbowLine {
+  background: linear-gradient(90deg, #f70fff, #8572ef, #13d6df, #48a6e7);
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+.clients {
+  margin: 70px 0;
+}
+.clients h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.clientsLogos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.clientsLogos img {
+  width: 150px;
+}
+.grayLine {
+  background: gray;
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+.networks {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto;
+  max-width: 600px;
+  padding: 0 30px;
+}
+.networks img {
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+  width: 45px;
+}
+.foot {
+  color: gray;
+}
+.legalInfo {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  user-select: none;
+}
+.legalInfo img {
+  display: inline-block;
+  margin-right: 20px;
+  height: 19px;
+}
+.legalInfo button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: gray;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+  font-size: 16px;
+}
+.legalInfo button:hover {
+  color: white;
+}
+.payMethods {
+  display: flex;
+  justify-content: center;
+}
+.payMethods img {
+  width: 50px;
+  margin: 0 13px;
+}
+.contactInfo {
+  margin: 40px 0 0 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+.whitespace::before {
+  content: "\A";
+  white-space: pre;
+}
+@media (min-width: 960px) {
+  .container {
+    padding-top: 140px;
+  }
+  .clients h2 {
+    margin-bottom: 90px;
+  }
+  .clients {
+    margin: 100px 0;
+  }
+  .networks img {
+    width: 50px;
+  }
+  .networks img:hover {
+    opacity: 1;
+  }
+  .foot {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .legalInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .payMethods {
+    align-items: center;
+    justify-self: end;
+    grid-column-start: 2;
+    margin-right: 20px;
+  }
+  .payMethods img {
+    width: 50px;
+  }
+  .payMethods img:last-of-type {
+    margin-right: 0;
+  }
+}
